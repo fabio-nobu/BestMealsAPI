@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Backend do desafio prático do Best Meals - SIQ",
   "main": "loader.js",
-  "script": {},
+  "scripts": {
+    "start:server": "nodemon server.js"
+  },
   "author": "Fabio Nobuyoshi Moriya Yusuki",
   "license": "ISC",
   "dependencies": {
