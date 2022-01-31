@@ -1,3 +1,8 @@
+/*
+* @author: Fabio Nobuyoshi Moriya Yusuki
+* @module description: modulo responsável por iniciar o servidor local
+* Comando para iniciar o servidor: npm run start:server (configurado no package.json)
+*/
 const app = require("./api/app");
 const debug = require("debug")("node-angular");
 const http = require("http");

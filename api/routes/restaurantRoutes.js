@@ -1,3 +1,8 @@
+/* 
+* @author: Fabio Nobuyoshi Moriya Yusuki
+* @module description: responsável pela configuração das rotas a serem utilizadas para consumir o service
+*/
+
 const express = require('express');
 
 const RestaurantController = require('../controllers/restaurant');

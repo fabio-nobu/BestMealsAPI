@@ -2,15 +2,17 @@
   "name": "best-meals-api",
   "version": "1.0.0",
   "description": "Backend do desafio prático do Best Meals - SIQ",
-  "main": "loader.js",
+  "main": "server.js",
   "scripts": {
-    "start:server": "nodemon server.js"
+    "start:server": "nodemon server.js",
+    "test": "jest"
   },
   "author": "Fabio Nobuyoshi Moriya Yusuki",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
+    "jest": "^27.4.7",
     "mongoose": "^6.1.8",
     "nodemon": "^2.0.15"
   }

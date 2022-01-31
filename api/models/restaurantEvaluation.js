@@ -1,5 +1,10 @@
+/*
+* @author: Fabio Nobuyoshi Moriya Yusuki
+* @description: modelo da avaliação do restaurante a ser utilizado pelo mongoose
+*/
+
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; //Setando uma constante que sera usada frequentemente dentro do da criação do Schema. Economiza espaço de código de tempo
 
 const restaurantEvaluationSchema = new Schema({
     restaurant: { type: Schema.Types.ObjectId, red: "Restaurant" },

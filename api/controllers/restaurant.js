@@ -1,5 +1,12 @@
+/*
+* @author: Fabio Nobuyoshi Moriya Yusuki
+* @module description: Controller responsável pelo CRUD do restaurante
+*/
 const Restaurant = require ('../models/restaurant');
 
+/*
+* @description: Adicionar restaurante no banco de dados  de acordo com os parametros passados na requisição.
+*/
 exports.addRestaurant = (req, res, next) => {
     const restaurant = new Restaurant({
         name: req.body.name,
@@ -27,6 +34,9 @@ exports.addRestaurant = (req, res, next) => {
         });
 };
 
+/*
+* @description: Atualizar restaurante no banco de dados de acordo com os parametros passados na requisição.
+*/
 exports.updateRestaurant = (req, res, next) => {
     const restaurant = new Restaurant({
         _id: req.body.id,
@@ -49,6 +59,9 @@ exports.updateRestaurant = (req, res, next) => {
         });
 };
 
+/*
+* @description: Consultar lista de todos os restaurantes no banco de dados.
+*/
 exports.getRestaurants = (req, res, next) => {
     Restaurant.find()
         .then(documents => {
@@ -69,6 +82,9 @@ exports.getRestaurants = (req, res, next) => {
         });
 };
 
+/*
+* @description: Consultar restaurante no banco de dados de acordo com o parametro ID passados na requisição.
+*/
 exports.getRestaurant = (req, res, next) => {
     postMessage.findById(req.params.id)
         .then(restaurant => {
@@ -85,6 +101,9 @@ exports.getRestaurant = (req, res, next) => {
         });
 };
 
+/*
+* @description: Deletar restaurante no banco de dados de acordo com o parametro ID passados na requisição.
+*/
 exports.deleteRestaurant = (req, res, next) => {
     Restaurant.deleteOne({ _id: req.params.id })
         .then(result => {
